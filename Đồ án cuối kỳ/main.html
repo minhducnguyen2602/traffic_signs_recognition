@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script>
+        function chooseFile(fileInput) {
+            if (fileInput.files && fileInput.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#image').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(fileInput.files[0])
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="traffic">
+        <div class="container">
+            <div class="info">TRAFFIC SIGN DETECTOR</div>
+            <div class="detect">
+                <form action="" class="form">
+                    <img src="" alt="" id="image" width="500" height="400">
+                    <input type="file" name="" id="imgFile" onchange="chooseFile(this)"
+                        accept="image/gif, image/jpeg, image/png">
+                </form>
+
+                <img src="./assets/img/IMG_0295.JPG" alt="" class="output">
+            </div>
+            <button class="handle">Detect</button>
+        </div>
+    </div>
+</body>
+</html>
