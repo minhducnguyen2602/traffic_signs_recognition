@@ -24,6 +24,7 @@ html {
     align-items: center;
     justify-content: center;
     display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -43,7 +44,7 @@ html {
 
 .detect {
     padding: 50px;
-    height: 80%;
+    height: 92%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -59,7 +60,7 @@ html {
 
 .output {
     width: 500px;
-    height: 400px;
+    height: 340px;
 }
 
 .handle {
@@ -68,5 +69,5 @@ html {
     padding: 12px 32px;
     background-color: #AFF36A;
     border-radius: 16px;
-    margin-left: 46%;
+    margin-top: 32px;
 }
