@@ -22,7 +22,7 @@ def predict():
     file = request.files["file"]
     img_array = np.frombuffer(file.read(), np.uint8)
     image = cv2.imdecode(img_array, cv2.IMREAD_COLOR)
-    model_yolo = YOLO(r"C:\Users\ACER\Desktop\Hoctap\Ki2nam2\Nhandang\Doan\weight\best.pt")
+    model_yolo = YOLO(r"best.pt")
     predicted_label = model_yolo(image)
     predicted_label = predicted_label[0].plot()
     predicted_label = cv2.cvtColor(predicted_label, cv2.COLOR_BGR2RGB)

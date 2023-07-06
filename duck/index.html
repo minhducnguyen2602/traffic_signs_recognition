@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upload và Dự đoán ảnh</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <h1>Upload và Dự đoán ảnh</h1>
-    <input type="file" id="imageUpload"><br>
-    <img id="preview" width="300"><br>
-    <button id="predictButton">Dự đoán</button><br>
-    <h2>Kết quả dự đoán:</h2>
-    <img id="predictionImage" width="600" height = "600">
-    <script src="upload.js"></script>
+    <div class="traffic">
+        <div class="container">
+            <h1>Upload và Dự đoán ảnh</h1>
+            <div class="detect">
+                <div class="input">
+                    <input type="file" id="imageUpload"><br>
+                    <div class="input-img">
+                        <img id="preview"><br>
+                    </div>
+                </div>
+                <div class="output">
+                    <h2>Kết quả dự đoán:</h2>
+                    <div class="output-img">
+                        <img id="predictionImage">
+                    </div>
+                </div>
+            </div>
+            <script src="upload.js"></script>
+        </div>
+        
+        <button id="predictButton">Dự đoán</button><br>
+    </div>
 </body>
 </html>
