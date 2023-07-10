@@ -44,7 +44,7 @@ h1 {
 
 .detect {
     display: flex;
-    padding: 24px 24px;
+    padding: 28px 0;
     justify-content: space-evenly;
 }
 
@@ -67,7 +67,7 @@ h1 {
 
 h2 {
     margin: 0;
-    padding-bottom: 28px;
+    padding-bottom: 33px;
 }
 
 #imageUpload {
