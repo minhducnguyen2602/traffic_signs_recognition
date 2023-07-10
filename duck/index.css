@@ -46,6 +46,7 @@ h1 {
     display: flex;
     padding: 28px 0;
     justify-content: space-evenly;
+    position: relative;
 }
 
 .input, .output {
@@ -86,4 +87,34 @@ h2 {
 
 .border-left {
     border-left: 1px solid black;
+}
+
+.input-area {
+    width: 36%;
+    height: 65%;
+    background-color: #e9e8e8;
+    position: absolute;
+    top: 23%;
+    left: 7%;
+    border: 1px dashed #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-icon {
+    font-size: 4rem;
+}
+
+.output-area {
+    width: 36%;
+    height: 65%;
+    background-color: #fff;
+    position: absolute;
+    top: 23%;
+    right: 7%;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

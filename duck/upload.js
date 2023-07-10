@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var preview = document.getElementById("preview");
   var predictButton = document.getElementById("predictButton");
   var predictionImage = document.getElementById("predictionImage");
+  let inputArea = document.querySelector(".input-area");
+  let outputArea = document.querySelector(".output-area");
 
   imageUpload.addEventListener("change", function () {
     var file = imageUpload.files[0];
@@ -12,9 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
     reader.addEventListener("load", function () {
       preview.src = reader.result;
     }, false);
-
+    
     if (file) {
       reader.readAsDataURL(file);
+      inputArea.style.display = "none";
     }
   });
 
@@ -44,6 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
       .catch(function (error) {
         console.error(error);
       });
+    
+    outputArea.style.display = 'none';
+
   });
   
 });
