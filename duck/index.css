@@ -51,6 +51,7 @@ h1 {
 .input, .output {
     width: 45%;
     max-width: 45%;
+    text-align: center;
 }
 
 .input-img,
