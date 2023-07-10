@@ -82,3 +82,7 @@ h2 {
     border-radius: 16px;
     margin-top: 32px;
 }
+
+.border-left {
+    border-left: 1px solid black;
+}
