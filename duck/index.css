@@ -102,6 +102,10 @@ h2 {
     justify-content: center;
 }
 
+.input-area.active {
+    border: 1px solid #333;
+}
+
 .input-icon {
     font-size: 4rem;
 }
